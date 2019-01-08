@@ -16,6 +16,7 @@ mongoose.connection
         console.log(`Connection error: ${err.message}`);
     });
 
+require('./models/user');
 app.use('/',router)
 
 app.listen(port,function () {
